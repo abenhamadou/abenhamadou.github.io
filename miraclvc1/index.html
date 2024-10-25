@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title> MIRACL-VC1 </title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+    <meta property="og:image" content="https://jonbarron.info/mipnerf/img/rays_square.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="682">
+    <meta property="og:image:height" content="682">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jonbarron.info/mipnerf/"/>
+    <meta property="og:title" content="mip-NeRF" />
+    <meta property="og:description" content="Project page for Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields." />
+
+        <!--TWITTER-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="mip-NeRF" />
+    <meta name="twitter:description" content="Project page for Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields." />
+    <meta name="twitter:image" content="https://jonbarron.info/mipnerf/img/rays_square.png" />
+
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/buttons.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>MIRACL-VC1</b>: an RGB-D dataset for lipreading in English</br>
+                <small>
+
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li><a href="http://rekikamed.github.io/">
+                        Ahmed Rekik </a>
+                        </br>CRNS
+                    </li>
+                    <li>
+                        <a href="http://abenhamadou.github.io/">
+                            Achraf Ben-Hamadou
+                        </a>
+                        </br>CRNS
+                    </li>
+                    <li>
+                          Walid Mahdi
+                        </br>Sfax University
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <image src="img/EmbeddedImage.jpg" class="img-responsive" alt="overview"><br>
+                <p class="text-justify">
+                    MIRACL-VC1 is a lip-reading dataset including both depth and color images. It can be used for diverse research fields like visual speach recognition, face detection, and biometrics. Fifteen speakers (five men and ten women) positioned in the frustum of a MS Kinect sensor and utter ten times a set of ten words and ten phrases (see the table below). Each instance of the dataset consists of a synchronized sequence of color and depth images (both of 640x480 pixels).  The MIRACL-VC1 dataset contains a total number of 3000 instances.
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Dataset labels
+                </h3>
+
+        <table style="border-collapse: separate; border-spacing: 0 10px;">
+        <thead>
+            <tr>
+                <th class="table-cell">ID</th>
+                <th class="table-cell">Words</th>
+                <th class="table-cell">ID</th>
+                <th class="table-cell">Phrases</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table-cell">1</td>
+                <td class="table-cell">Hegin</td>
+                <td class="table-cell">1</td>
+                <td class="table-cell">Stop navigation.</td>
+            </tr>
+            <tr>
+                <td class="table-cell">2</td>
+                <td class="table-cell">Choose</td>
+                <td class="table-cell">2</td>
+                <td class="table-cell">Excuse me.</td>
+            </tr>
+            <tr>
+                <td class="table-cell">3</td>
+                <td class="table-cell">Connection</td>
+                <td class="table-cell">3</td>
+                <td class="table-cell">I am sorry.</td>
+            </tr>
+            <tr>
+                <td class="table-cell">4</td>
+                <td class="table-cell">Navigation</td>
+                <td class="table-cell">4</td>
+                <td class="table-cell">Thank you.</td>
+            </tr>
+            <tr>
+                <td class="table-cell">5</td>
+                <td class="table-cell">Next</td>
+                <td class="table-cell">5</td>
+                <td class="table-cell">Good bye.</td>
+            </tr>
+            <tr>
+                <td class="table-cell">6</td>
+                <td class="table-cell">Previous</td>
+                <td class="table-cell">6</td>
+                <td class="table-cell">I love this game.</td>
+            </tr>
+            <tr>
+                <td class="table-cell">7</td>
+                <td class="table-cell">Start</td>
+                <td class="table-cell">7</td>
+                <td class="table-cell">Nice to meet you.</td>
+            </tr>
+            <tr>
+                <td class="table-cell">8</td>
+                <td class="table-cell">Stop</td>
+                <td class="table-cell">8</td>
+                <td class="table-cell">You are welcome.</td>
+            </tr>
+            <tr>
+                <td class="table-cell">9</td>
+                <td class="table-cell">Hello</td>
+                <td class="table-cell">9</td>
+                <td class="table-cell">How are you?</td>
+            </tr>
+            <tr>
+                <td class="table-cell">10</td>
+                <td class="table-cell">Well</td>
+                <td class="table-cell">10</td>
+                <td class="table-cell">Have a good time</td>
+            </tr>
+        </tbody>
+    </table>
+
+            </div>
+        </div>
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Download
+                </h3>
+                <p class="text-justify">
+The MIRACL-VC1 dataset is made available for research purposes only. In order to have access to the dataset please follow these 15 links, each one corresponds to the data of one person. For more information do not hesitate to sent an email to Ahmed Rekik (rekikamed@gmail.com),
+It is recommended to use the following link to get access to the full data on Google Drive:<br>
+
+                                    <p class="text-center">
+                <a href="https://drive.google.com/uc?id=1TcPVwcGcFFi98_oNZJBJNUnRii4qCRwx&export=download" class="btn btn-outline-info btn-sm btn-radius">Download all in one zip file (about 5 Gb)</a>
+                </p>
+
+
+Otherwise, you can use the following links:
+                <p class="text-center">
+                <a href="https://goo.gl/yEycFj" class="btn btn-outline-info btn-sm btn-radius">F01</a>
+                <a href="https://goo.gl/vsQfli" class="btn btn-outline-info btn-sm btn-radius">F02</a>
+                <a href="https://goo.gl/oWO8Fg" class="btn btn-outline-info btn-sm btn-radius">F04</a>
+                <a href="https://goo.gl/kgG3eO" class="btn btn-outline-info btn-sm btn-radius">F05</a>
+                <a href="https://goo.gl/Yb3itr" class="btn btn-outline-info btn-sm btn-radius">F06</a>
+                <a href="https://goo.gl/RitTn4" class="btn btn-outline-info btn-sm btn-radius">F07</a>
+                <a href="https://goo.gl/cBR5OQ" class="btn btn-outline-info btn-sm btn-radius">F08</a>
+                <a href="https://goo.gl/CFPMqe" class="btn btn-outline-info btn-sm btn-radius">F09</a><br>
+                <a href="https://goo.gl/4S5hmw" class="btn btn-outline-info btn-sm btn-radius">F010</a>
+                <a href="https://goo.gl/NEPWVr" class="btn btn-outline-info btn-sm btn-radius">F11</a>
+                <a href="https://goo.gl/iYWsQX" class="btn btn-outline-info btn-sm btn-radius">M01</a>
+                <a href="https://goo.gl/lgEy7n" class="btn btn-outline-info btn-sm btn-radius">M02</a>
+                <a href="https://goo.gl/MegHQl" class="btn btn-outline-info btn-sm btn-radius">M04</a>
+                <a href="https://goo.gl/YqxXbh" class="btn btn-outline-info btn-sm btn-radius">M07</a>
+                <a href="https://goo.gl/aDi5mZ" class="btn btn-outline-info btn-sm btn-radius">M08</a>
+                </p>
+
+Sensor calibration to align the depth maps with color images can be downloaded from the following link:
+                </p>
+                <p class="text-center">
+                <a href="https://goo.gl/t2cStF" class="btn btn-outline-info btn-sm btn-radius">Download sensor calibration file</a></p>
+           </div>
+        </div>
+
+
+
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                Details and results for visual speech recognition can be found in this following paper:
+                <pre><code>@article{rekik2016adaptive,
+    title   = {An adaptive approach for lip-reading using image and depth data},
+    author  = {Rekik, Ahmed and Ben-Hamadou, Achraf and Mahdi, Walid},
+    journal = {Multimedia Tools and Applications},
+    volume  = {75},
+    number  = {14},
+    pages   = {8609--8636},
+    year    = {2016},
+    publisher= {Springer}
+}</code></pre>
+
+<pre><code>
+@inproceedings{RekikICIAR14,
+    author    = {Ahmed Rekik and Achraf {Ben-Hamadou} and Walid Mahdi},
+    title     = {A New Visual Speech Recognition Approach for {RGB-D} Cameras},
+    booktitle = {Image Analysis and Recognition - 11th International Conference,
+                {ICIAR}  2014, Vilamoura, Portugal, October 22-24, 2014}
+    pages     = {21--28},
+    year      = {2014}
+}</code></pre>
+
+    </div>
+        </div>
+
+<div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                Folder architecture of the dataset is explained as follows:
+            </h3>
+            <p style="text-align:center;">
+                <image src="img/miraclvc1_folder_structure.png" class="img-responsive" alt="scales">
+            </p>
+            <p class="text-justify">
+            </p>
+        </div>
+</div>
+
+
+
+    </div>
+</body>
+</html>
