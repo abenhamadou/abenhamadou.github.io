@@ -152,3 +152,62 @@ span.highlight {
   border-bottom: 1px solid lightgray;
   text-align : center;
 }
+
+/*!* Button Style *!*/
+/*.btn {*/
+/*  background-color: #1772d0; !* Match the primary link color *!*/
+/*  color: white;*/
+/*  border: none;*/
+/*  padding: 8px 16px;*/
+/*  font-size: 14px;*/
+/*  font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
+/*  cursor: pointer;*/
+/*  border-radius: 4px; !* Rounded corners *!*/
+/*  transition: background-color 0.3s ease, transform 0.2s ease; !* Smooth hover transition *!*/
+/*}*/
+
+/*.btn:hover {*/
+/*  background-color: #f09228; !* Hover effect color *!*/
+/*  transform: scale(1.05); !* Slight zoom effect *!*/
+/*}*/
+
+/*.btn:focus {*/
+/*  outline: none; !* Remove the outline for better design *!*/
+/*}*/
+
+ /*Button Style*/
+.btn {
+  color: #1772d0; /* Match the primary link color */
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background: none; /* No background color */
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.btn:hover {
+  color: #f09228; /* Change color on hover */
+}
+
+.btn:focus {
+  outline: none; /* Remove the outline for better design */
+}
+
+.btn .arrow {
+  margin-left: 8px; /* Space between text and the arrow */
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #1772d0; /* Arrow pointing down */
+  transition: transform 0.3s ease; /* Smooth rotation on collapse/expand */
+}
+
+.btn.collapsed .arrow {
+  transform: rotate(180deg); /* Flip arrow when collapsed */
+}

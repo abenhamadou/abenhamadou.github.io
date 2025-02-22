@@ -52,11 +52,39 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Some news</h2>
-              </td>
-            </tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <h2>Some news</h2>          
+                    <ul>
+                      <li><strong>[Feb 2025]</strong> Our international workshop <em>ODIN2025 – Oral and Dental Image aNalysis Workshop</em> has been accepted in conjunction with <em>MICCAI 2025!</em>! 🎉 <a href="https://odin-workshops.org/2025/" target="_blank">[Learn More]</a></li>
+                      <li><strong>[Dec 2024]</strong> Our paper <em>TSegLab: Multi-stage 3D dental scan segmentation and labeling</em> has been accepted in <em>Elsevier Computers in Biology and Medicine</em>.</li>
+                      <li><strong>[Dec 2024]</strong> Our paper <em>LRW-AR: Cross-Attention Fusion of Visual and Geometric Features for Large Vocabulary Arabic Lipreading</em> by Samar Daou et al. has been accepted in <em>MDPI Technologies</em> <a href="https://www.mdpi.com/2227-7080/13/1/26" target="_blank">[Read the Article]</a></li>
+                        <li><strong>[Oct 2024]</strong> Attending <strong>MICCAI 2024</strong> in Marrakesh, Morocco. 🌍</li>
+                    </ul>
+          
+                    <!-- Collapsible Section -->
+                    <button  class="btn" id="toggleOlderNews" onclick="toggleNews()">Show Older News ▼</button>
+                    <ul id="olderNews" style="display: none;">
+                      <li><strong>[Oct 2024]</strong> The <strong>3DTeethLan</strong> challenge is officially closed during the <strong>Dental Cluster Satellite Event</strong> at <strong>MICCAI 2024</strong>.</li>
+                    </ul>
+                </td>
+              </tr>
+              <script>
+                function toggleNews() {
+                  var olderNews = document.getElementById("olderNews");
+                  var button = document.getElementById("toggleOlderNews");
+    
+                  if (olderNews.style.display === "none") {
+                    olderNews.style.display = "block";
+                    button.textContent = "Hide Older News ▲";
+                  } else {
+                    olderNews.style.display = "none";
+                    button.textContent = "Show Older News ▼";
+                  }
+                }
+              </script>
+            
           </tbody></table>
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
@@ -68,7 +96,7 @@
 <table style="width:100%; border-spacing: 0 10px; border-collapse:separate;margin-right:auto;margin-left:auto;">
 
     <tbody>
-        <tr>
+        <tr  style="padding: 0; margin: 0;">
               <td class="paper_thumbnail_cell">
                 <div class="line">
                   <img src='images/cibm2025.jpg' width=100%>
