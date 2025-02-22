@@ -153,28 +153,6 @@ span.highlight {
   text-align : center;
 }
 
-/*!* Button Style *!*/
-/*.btn {*/
-/*  background-color: #1772d0; !* Match the primary link color *!*/
-/*  color: white;*/
-/*  border: none;*/
-/*  padding: 8px 16px;*/
-/*  font-size: 14px;*/
-/*  font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
-/*  cursor: pointer;*/
-/*  border-radius: 4px; !* Rounded corners *!*/
-/*  transition: background-color 0.3s ease, transform 0.2s ease; !* Smooth hover transition *!*/
-/*}*/
-
-/*.btn:hover {*/
-/*  background-color: #f09228; !* Hover effect color *!*/
-/*  transform: scale(1.05); !* Slight zoom effect *!*/
-/*}*/
-
-/*.btn:focus {*/
-/*  outline: none; !* Remove the outline for better design *!*/
-/*}*/
-
  /*Button Style*/
 .btn {
   color: #1772d0; /* Match the primary link color */
